@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "text-reader-backend": {
+      "main": "src/text-reader-backend/main.mo",
+      "type": "motoko"
+    },
+    "text-reader-frontend": {
+      "dependencies": [
+        "text-reader-backend"
+      ],
+      "source": [
+        "src/text-reader-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "text-reader-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
